@@ -9,4 +9,90 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  text-align: center;
+  background-color: yellowgreen;
+}
+.main-title {
+  color: yellowgreen;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid rgb(56, 53, 53);
+  padding: 1rem;
+  margin: 2rem 19rem;
+  border-radius: 1rem 4rem;
+  text-shadow: 2px 2px 5px rgb(67, 209, 209);
+  background-color: rgb(224, 142, 231);
+}
+.main-title:hover {
+  color: yellowgreen;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid rgb(56, 53, 53);
+  padding: 1rem;
+  margin: 2rem 19rem;
+  border-radius: 4rem 1rem;
+  text-shadow: 2px 2px 5px rgb(67, 209, 209);
+  background-color: rgb(224, 142, 231);
+}
+p {
+  padding: 1rem 9rem;
+  border: darkslategray 0.5px solid;
+  border-radius: 5rem;
+  margin-left: 14rem;
+  margin-right: 14rem;
+}
+img {
+  border-radius: 4rem;
+  box-shadow: teal;
+  border: teal 1px dashed;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+img:hover {
+  filter: grayscale(0%);
+}
+li {
+  list-style: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  padding: 1rem;
+}
+h2 {
+  padding-left: 3rem;
+  font-family: sans-serif;
+  /* text-decoration: underline; */
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 30px rgb(224, 142, 231),
+      0 0 40px rgb(224, 142, 231), 0 0 50px rgb(224, 142, 231),
+      0 0 60px rgb(224, 142, 231), 0 0 70px rgb(224, 142, 231);
+  }
+
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+section {
+  /* border: 1px solid black; */
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  min-height: 200px;
+  border: 8px solid;
+  padding: 1rem;
+  margin: 5rem;
+  border-width: 20px;
+  border-image: repeating-radial-gradient(
+      circle at 10px,
+      turquoise,
+      pink 2px,
+      greenyellow 4px,
+      pink 2px
+    )
+    1;
 }
